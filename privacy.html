@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隱私權政策 · Habito</title>
+  <meta name="description" content="Habito 隱私權政策：說明我們蒐集的個人資料、第三方服務（Firebase、RevenueCat）與你的資料權利。" />
+  <meta name="theme-color" content="#0B0D12" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236E5DE7'/%3E%3Cpath d='M32 70V30M68 70V30M32 50h36' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { 950: '#07080C', 900: '#0B0D12', 800: '#12151E', 700: '#1A1E2A', 600: '#262B3A', 500: '#3A4152' },
+            brand: { 50: '#F1F0FE', 100: '#E6E4FD', 200: '#CFCBFB', 300: '#ADA6F7', 400: '#8B7FF2', 500: '#6E5DE7', 600: '#5A46D6', 700: '#4A38B5', 800: '#3D3093', 900: '#342B76' },
+            warm: { 300: '#FFD6A0', 400: '#FFB86B', 500: '#FF9F45', 600: '#F5822E' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Noto Sans TC', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: { glow: '0 0 0 1px rgba(110,93,231,0.25), 0 20px 60px -20px rgba(110,93,231,0.5)' },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-ink-900 font-sans text-slate-300 antialiased selection:bg-brand-500/40 selection:text-white">
+
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-brand-600/15 blur-[120px]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(110,93,231,0.08),transparent_55%)]"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/5 bg-ink-800/60 px-4 py-3 backdrop-blur-xl sm:px-6">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 shadow-glow">
+            <svg viewBox="0 0 100 100" class="h-5 w-5" aria-hidden="true"><path d="M30 72V28M70 72V28M30 50h40" stroke="white" stroke-width="12" stroke-linecap="round" /></svg>
+          </span>
+          <span class="font-display text-xl font-extrabold tracking-tight text-white">Habito</span>
+        </a>
+        <div class="hidden items-center gap-8 md:flex">
+          <a href="index.html#features" class="text-sm font-medium text-slate-300 transition hover:text-white">特色功能</a>
+          <a href="index.html#pricing" class="text-sm font-medium text-slate-300 transition hover:text-white">訂閱方案</a>
+          <a href="privacy.html" class="text-sm font-semibold text-white">隱私政策</a>
+          <a href="terms.html" class="text-sm font-medium text-slate-300 transition hover:text-white">服務條款</a>
+        </div>
+        <a href="index.html#download" class="hidden rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-brand-100 sm:inline-flex">立即下載</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-4xl px-5 pt-36 pb-24 sm:px-8">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-brand-300">
+      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+      返回首頁
+    </a>
+
+    <header class="mt-6 border-b border-white/5 pb-8">
+      <span class="text-sm font-semibold uppercase tracking-widest text-brand-400">Legal</span>
+      <h1 class="mt-3 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">隱私權政策</h1>
+      <p class="mt-4 text-sm text-slate-500">最後更新日期：2026 年 1 月 1 日 · 生效日期：2026 年 1 月 1 日</p>
+    </header>
+
+    <div class="prose-habito mt-10 space-y-10 text-[15px] leading-relaxed text-slate-300">
+      <p>
+        Habito（以下稱「我們」或「本服務」）非常重視你的隱私。本隱私權政策說明當你使用 Habito 行動應用程式與官方網站（以下合稱「本服務」）時，我們如何蒐集、使用、儲存、分享與保護你的個人資料。使用本服務即表示你同意本政策所述之做法。
+      </p>
+
+      <section>
+        <h2>1. 我們蒐集的資料</h2>
+        <p>為提供並改善本服務，我們可能蒐集以下類別的個人可識別資訊（PII）與非個人資料：</p>
+        <div class="mt-5 overflow-hidden rounded-2xl border border-white/5">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+              <thead>
+                <tr class="bg-ink-800/80 text-xs uppercase tracking-wider text-slate-400">
+                  <th class="px-5 py-3 font-semibold">資料類別</th>
+                  <th class="px-5 py-3 font-semibold">欄位範例</th>
+                  <th class="px-5 py-3 font-semibold">用途</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5">
+                <tr><td class="px-5 py-3 font-medium text-white">帳號資訊</td><td class="px-5 py-3 font-mono text-xs text-brand-200">email, name</td><td class="px-5 py-3 text-slate-400">建立帳號、登入驗證、客服識別</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">識別碼</td><td class="px-5 py-3 font-mono text-xs text-brand-200">user_id, device_id</td><td class="px-5 py-3 text-slate-400">跨裝置同步、資料歸屬、防濫用</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">交易紀錄</td><td class="px-5 py-3 font-mono text-xs text-brand-200">purchase_history</td><td class="px-5 py-3 text-slate-400">訂閱狀態判定、恢復購買、退款處理</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">個人檔案</td><td class="px-5 py-3 font-mono text-xs text-brand-200">profile_picture</td><td class="px-5 py-3 text-slate-400">顯示頭像與共享空間成員</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">網路資訊</td><td class="px-5 py-3 font-mono text-xs text-brand-200">ip_address</td><td class="px-5 py-3 text-slate-400">安全防護、服務區域、錯誤診斷</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">使用者內容</td><td class="px-5 py-3 font-mono text-xs text-brand-200">user_generated_content</td><td class="px-5 py-3 text-slate-400">時光瓶文字／照片、備忘錄、記帳、日曆</td></tr>
+                <tr><td class="px-5 py-3 font-medium text-white">使用分析</td><td class="px-5 py-3 font-mono text-xs text-brand-200">app_usage_analytics</td><td class="px-5 py-3 text-slate-400">功能優化、當機分析、產品改進</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-slate-500">我們不會刻意蒐集你的精確位置或生物辨識資料。部分功能（如麥克風、相機、相簿、通知）僅在你授予對應權限後才會使用，且你可隨時於系統設定中關閉。</p>
+      </section>
+
+      <section>
+        <h2>2. 我們如何使用資料</h2>
+        <ul class="mt-3 list-disc space-y-2 pl-6 marker:text-brand-400">
+          <li>提供、維護與改善本服務的核心功能（專注計時、白噪音、時光瓶、共享空間等）。</li>
+          <li>驗證身分、處理訂閱與購買、恢復購買並提供客戶支援。</li>
+          <li>在你的裝置之間同步資料，並與你邀請的成員共享指定內容。</li>
+          <li>分析使用趨勢與當機情形，以提升穩定性與使用者體驗。</li>
+          <li>發送服務通知、安全性提示與（經你同意的）行銷訊息。</li>
+          <li>遵守法令義務、解決爭議並執行我們的條款。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. 第三方服務</h2>
+        <p>我們使用下列第三方服務來處理特定功能，這些服務可能依其隱私權政策存取你的部分資料：</p>
+
+        <div class="mt-5 space-y-4">
+          <div class="rounded-2xl border border-white/5 bg-ink-800/50 p-5">
+            <div class="flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-warm-500/15 text-lg">🔥</span>
+              <h3 class="font-display font-bold text-white">Google Firebase</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">
+              我們使用 Firebase Authentication（帳號驗證）、Cloud Firestore / Storage（資料與檔案儲存）、Cloud Messaging（推播通知）、Remote Config 與 Crashlytics / Analytics（使用分析與當機回報）。Firebase 可能處理你的 <span class="font-mono text-xs text-brand-200">email, name, user_id, device_id, ip_address, user_generated_content, app_usage_analytics</span>。資料將儲存於 Google 的伺服器，並受 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" class="text-brand-300 underline decoration-dotted underline-offset-4">Firebase 隱私權政策</a> 與 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-brand-300 underline decoration-dotted underline-offset-4">Google 隱私權政策</a> 規範。
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-white/5 bg-ink-800/50 p-5">
+            <div class="flex items-center gap-3">
+              <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/15 text-lg">💳</span>
+              <h3 class="font-display font-bold text-white">RevenueCat</h3>
+            </div>
+            <p class="mt-3 text-sm text-slate-400">
+              我們使用 RevenueCat 管理 App 內訂閱與購買。當你購買或續訂時，App Store / Google Play 會將購買憑證傳遞給 RevenueCat，用於驗證訂閱狀態。可能處理的資料包含匿名 <span class="font-mono text-xs text-brand-200">app_user_id, purchase_history, device 資訊</span>。實際付款由 Apple 或 Google 處理，我們不會存取你的完整信用卡資訊。詳情請參閱 <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener" class="text-brand-300 underline decoration-dotted underline-offset-4">RevenueCat 隱私權政策</a>。
+            </p>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-slate-500">除上述服務與法令要求外，我們不會將你的個人資料販售給第三方。</p>
+      </section>
+
+      <section>
+        <h2>4. 資料分享與揭露</h2>
+        <ul class="mt-3 list-disc space-y-2 pl-6 marker:text-brand-400">
+          <li><strong class="text-white">共享空間成員：</strong>你主動加入之共享空間內的日曆、記帳、備忘錄等內容，會被該空間的其他成員看見。</li>
+          <li><strong class="text-white">服務供應商：</strong>協助我們營運的第三方（如 Firebase、RevenueCat），僅在必要範圍內處理資料。</li>
+          <li><strong class="text-white">法令遵循：</strong>當我們基於誠信相信必須遵守法律、保護使用者或公眾安全時。</li>
+          <li><strong class="text-white">企業交易：</strong>若發生合併、收購或資產移轉，你的資料可能隨之移轉，我們會事先通知。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. 資料儲存與安全</h2>
+        <p>我們透過傳輸層加密（TLS）、存取控制與最小權限原則保護你的資料。資料保存期限以達成蒐集目的所必要之期間為限，法律另有規定者從其規定。惟請注意，沒有任何網路傳輸或電子儲存方式能保證百分之百安全。</p>
+      </section>
+
+      <section>
+        <h2>6. 你的權利</h2>
+        <p>依適用的資料保護法令（如 GDPR、台灣個人資料保護法），你有權：</p>
+        <ul class="mt-3 list-disc space-y-2 pl-6 marker:text-brand-400">
+          <li>查詢、閱覽與請求補充或更正你的個人資料。</li>
+          <li>請求刪除你的帳號與相關資料。</li>
+          <li>請求停止蒐集、處理或利用，並撤回同意。</li>
+          <li>請求以可攜格式取得你的資料副本。</li>
+          <li>隨時於 App 內或系統設定中關閉推播與分析相關權限。</li>
+        </ul>
+        <p class="mt-3">如欲行使上述權利，請寄信至 <a href="mailto:support@habitoapp.com" class="text-brand-300 underline decoration-dotted underline-offset-4">support@habitoapp.com</a>，我們將在合理期間內回覆。你亦可於 App 設定中直接刪除帳號。</p>
+      </section>
+
+      <section>
+        <h2>7. 兒童隱私</h2>
+        <p>本服務不適用於 13 歲以下兒童。若我們發現在未獲得監護人同意的情況下蒐集了兒童個人資料，將儘速刪除。若你是家長或監護人並發現此情況，請聯絡我們。</p>
+      </section>
+
+      <section>
+        <h2>8. 國際資料傳輸</h2>
+        <p>你的資料可能被傳輸至你所在國家以外的伺服器（包含 Firebase 位於美國等地資料中心）並進行處理。我們會採取適當措施確保資料獲得本政策所承諾之保護水準。</p>
+      </section>
+
+      <section>
+        <h2>9. 政策變更</h2>
+        <p>我們可能不時更新本隱私權政策。重大變更時，我們將透過 App 內通知或網站公告告知，並更新本頁頂端之「最後更新日期」。繼續使用本服務即代表你接受更新後的政策。</p>
+      </section>
+
+      <section>
+        <h2>10. 聯絡我們</h2>
+        <p>若你對本隱私權政策有任何疑問，歡迎聯絡我們：</p>
+        <div class="mt-3 rounded-2xl border border-white/5 bg-ink-800/50 p-5 text-sm">
+          <p class="text-slate-400">Habito 隱私權保護聯絡窗口</p>
+          <p class="mt-1 text-white">電子郵件：<a href="mailto:support@habitoapp.com" class="text-brand-300 hover:text-brand-200">support@habitoapp.com</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="mt-14 flex flex-wrap gap-3 border-t border-white/5 pt-8">
+      <a href="terms.html" class="rounded-xl border border-white/15 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/5">閱讀服務條款 →</a>
+      <a href="index.html" class="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-brand-100">返回首頁</a>
+    </div>
+  </main>
+
+  <footer class="border-t border-white/5 bg-ink-950/80 px-5 py-10 sm:px-8">
+    <div class="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 text-xs text-slate-600 sm:flex-row">
+      <p>© <span id="year">2026</span> Habito. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="privacy.html" class="hover:text-brand-300">隱私權政策</a>
+        <a href="terms.html" class="hover:text-brand-300">服務條款</a>
+        <a href="mailto:support@habitoapp.com" class="hover:text-brand-300">聯絡我們</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
