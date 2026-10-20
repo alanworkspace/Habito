@@ -13,7 +13,11 @@ Habito 的官方行銷網站與法律文件託管點，可部署至 **Cloudflare
 
 ```
 habito_website/
+<<<<<<< HEAD
 ├── index.html          # Landing Page（Header / Hero / Features 四大核心 / Pricing + 方案對比表 / Download / Footer）
+=======
+├── index.html          # Landing Page（Header / Hero / Features / Pricing / Download / Footer）
+>>>>>>> 69863fd01ee0ac43df17ad34afe9812f8391a4d8
 ├── privacy.html        # 隱私權政策（PII 清單、Firebase / RevenueCat 宣告）
 ├── terms.html          # 服務條款（Premium 自動續訂、UGC、免責聲明）
 ├── assets/

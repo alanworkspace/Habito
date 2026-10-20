@@ -16,6 +16,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+<<<<<<< HEAD
 /* ---------- Logo mark (contrast on dark navbar) ---------- */
 .logo-mark {
   /* crisp 1px edge + soft halo + drop shadow for separation on dark bg */
@@ -28,6 +29,8 @@ body {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45));
 }
 
+=======
+>>>>>>> 69863fd01ee0ac43df17ad34afe9812f8391a4d8
 /* ---------- Scroll reveal ---------- */
 .reveal {
   opacity: 0;
