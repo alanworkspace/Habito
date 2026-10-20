@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "22968796007.com.alanlam.habito",
+        "paths": ["/join*", "/join/*"]
+      }
+    ]
+  }
+}
