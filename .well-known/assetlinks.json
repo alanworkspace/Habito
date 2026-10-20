@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.alan.habito",
+      "sha256_cert_fingerprints": [
+        "B1:E1:BA:04:7D:CB:19:5B:3F:99:64:76:E0:98:C4:51:D9:70:D2:CD:A7:6B:F5:7D:CD:84:E2:06:04:9C:FC:7B",
+        "C8:13:2C:C2:B7:49:C0:18:50:46:73:87:2F:7A:E2:09:D2:31:75:1B:8A:2E:29:58:43:4F:DA:F6:76:B5:D5:EF"
+    ]
+    }
+  }
+]

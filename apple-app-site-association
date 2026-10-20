@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "TEAMID.com.alanlam.habito",
+        "components": [
+          {
+            "/": "/Habito/join*",
+            "comment": "邀請連結：habito://join?code=XXXXXX 的網址版"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.com.alanlam.habito"]
+  }
+}

@@ -100,6 +100,66 @@ npx http-server -p 5173
 
 ---
 
+## Deep Link 驗證檔（App Links / Universal Links）
+
+App 的邀請連結有兩種形式，兩種都會帶著邀請碼：
+
+| 形式 | 範例 | 需要伺服器設定嗎 |
+|---|---|---|
+| 自訂 scheme | `habito://join?code=FRQ9MT` | **不需要**，已安裝 App 的裝置一定打得開 |
+| 網址（App Link / Universal Link） | `https://<網域>/Habito/join?code=FRQ9MT` | 需要網域根目錄放驗證檔 |
+
+### ★ 驗證檔必須在「網域根目錄」
+
+Android 的 `assetlinks.json` 與 iOS 的 `apple-app-site-association` 都**只**在
+**網域根目錄**被查詢：
+
+- `https://<網域>/.well-known/assetlinks.json`
+- `https://<網域>/apple-app-site-association`（iOS 也接受 `/.well-known/` 版本）
+
+放在子路徑（例如 `/Habito/.well-known/assetlinks.json`）**不會**被找到。
+
+所以：
+
+- **綁自訂網域**（例如 `habitoapp.com`）時：本倉庫的 `.well-known/` 與
+  `apple-app-site-association` 就是網域根目錄，**直接可用**。
+- **用 GitHub Pages 專案站**（`alanworkspace.github.io/Habito/`）時：專案站的
+  路徑不等於網域根目錄，必須另外在 **`alanworkspace.github.io` 使用者網站
+  倉庫**放一份（同一個檔案內容 + 一個空的 `.nojekyll`）。
+
+### `.nojekyll` 為什麼在這裡
+
+GitHub Pages 預設會用 Jekyll 編譯，而 Jekyll **會略過開頭是點的資料夾**
+（`.well-known/` 就這樣被吃掉）。根目錄放一個空的 `.nojekyll` 就能關閉 Jekyll，
+讓 GitHub Pages 原樣發布這些檔案。
+
+### 憑證指紋怎麼取得
+
+指紋必須是「**實際簽署這個 App 的那把金鑰**」的 SHA-256。在 App 專案執行：
+
+```sh
+cd android && ./gradlew printSigningFingerprints
+```
+
+會印出 `release`（`android/key.properties` 指定的那把）與 `debug` 兩組指紋，
+輸出格式可以直接貼進 `assetlinks.json` 的 `sha256_cert_fingerprints` 陣列。
+
+> ★ 這個任務會讀**建置實際會用到的**金鑰，所以它不可能跟打包結果對不上 ——
+>   不像手抄 `keytool` 輸出那樣會抄到舊金鑰或抄成 SHA-1。
+
+### ★ 上架前一定要補上「Play App Signing 金鑰」的指紋
+
+Google Play 會用**自己的 App Signing 金鑰**重新簽署上架的 APK，所以使用者
+裝到的手機上，簽章指紋是 **Play App Signing 金鑰**的，不是 `android/app/key.jks`
+的。
+
+要拿它的指紋：Play Console → **Setup** → **App integrity** → **App signing key**
+（畫面上會直接顯示 SHA-256 指紋）。把它加進 `assetlinks.json` 的陣列裡。
+
+`assetlinks.json` 可以同時放**多組**指紋（除錯金鑰 + 上傳金鑰 + Play App
+Signing 金鑰），Android 會逐一比對。
+
+---
 ## 設計與無障礙
 
 - 深色主題：`ink`（背景）搭配 `brand`（紫）與 `warm`（橙）點綴。
