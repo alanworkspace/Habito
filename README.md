@@ -87,7 +87,8 @@ npx http-server -p 5173
 | 位置 | 目前內容 | 說明 |
 | --- | --- | --- |
 | `index.html` 商店按鈕 | `href="#"` | 將 `data-store="appstore"` / `data-store="googleplay"` 的連結換成實際商店網址。 |
-| 訂閱價格 | NT$90 / NT$890 / NT$290 | 依實際方案調整（位於 `#pricing` 區塊）。 |
+| 訂閱價格 | HK$28 / 月、HK$238 / 年（首月 HK$18）| 免費版 + Premium 兩方案（位於 `#pricing` 區塊），依實際方案調整。 |
+| 免費版使用上限 | 行事曆 20 筆、私人賬簿 20 本、共享賬本 AA/家庭各 1 本、備忘錄 100 篇 | Premium 全部無上限，依實際產品設定調整。 |
 | 支援信箱 | `support@habitoapp.com` | 如使用不同信箱請全域取代。 |
 | 生效日期 | 2026 年 1 月 1 日 | 更新 `privacy.html`、`terms.html` 頂端日期。 |
 | 公司 / 負責人資訊 | 未填 | 依上架要求可於法律頁補上公司名稱與地址。 |
